@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
+    <Countdown
+      :year="2022"
+      :month="9"
+      :date="30"
+      :hour="20"
+      :minute="59"
+      :second="59"
+      :millisecond="5"
+    />
+    <!-- <Countdown /> -->
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Countdown from "@/components/Countdown.vue";
 
 export default {
   name: "HomeView",
   components: {
-    HelloWorld,
+    Countdown,
   },
 };
 </script>
